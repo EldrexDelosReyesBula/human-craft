@@ -1,125 +1,116 @@
-# Human Craft (`human-craft`)
+# Human Craft & AI Agent Engineering Suite
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Antigravity Compatible](https://img.shields.io/badge/Antigravity-Ready-brightgreen.svg)]()
 [![Claude Code Compatible](https://img.shields.io/badge/Claude%20Code-Ready-blueviolet.svg)]()
 [![Cursor Compatible](https://img.shields.io/badge/Cursor-Ready-orange.svg)]()
 
-A portable, framework-agnostic **engineering philosophy, decision system, and quality standard** that makes AI coding agents operate like elite senior software engineers and thoughtful product designers inside real human codebases.
+A portable, modular **engineering philosophy, security auditor, and AI agent engineering suite** that makes AI coding agents operate like elite senior software engineers, thoughtful product designers, and security professionals inside real production codebases.
 
 ---
 
-## 🎯 The Mission
+## 🏛️ The Engineering Triad
 
-> **“Make the agent behave like a thoughtful senior engineer and product designer working inside an existing human codebase—not like a code generator following a checklist.”**
-
-Most coding assistants default to AI generator anti-patterns: shallow copy-paste fixes, dead buttons masquerading as working UI, simulated API responses, noisy opportunistic refactors, and robotic commentary.
-
-`human-craft` provides an enforceable decision hierarchy that prioritizes:
-1. **Preserving existing conventions** over personal AI preferences.
-2. **Real implementations** over mock simulations.
-3. **Intentional visual restraint** over gratuitous gradients and card sprawl.
-4. **The 6-Month Comprehension Rule** for long-term maintainability.
-5. **Factual truth** in documentation.
+```text
+┌──────────────────────────────────────────────────────────────────┐
+│ 1. human-craft                                                  │
+│    Core engineering philosophy, maintainability & UI restraint   │
+└─────────────────────────────────┬────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────┐
+│ 2. security-privacy-auditor (v3.0)                              │
+│    Vulnerability detection, privacy & pre-deployment gates       │
+└─────────────────────────────────┬────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────┐
+│ 3. ai-agent-engineering-suite (v4.0 Modular)                     │
+│    Architecture, RAG, Memory, MCP, Multi-Agent & Evaluation     │
+└──────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## 🚀 Quick Install
+## 📦 Suite Components
 
-### 1. Antigravity (Google)
-#### Global (All Workspaces):
-```bash
-# Windows PowerShell
+### 1. Core Engineering & Quality
+- **[`human-craft`](./SKILL.md)**: Universal engineering philosophy, decision hierarchy, semantic domain naming, zero-simulation rule, and the 6-month maintainability standard.
+
+### 2. Security, Privacy & Pre-Deployment
+- **[`security-privacy-auditor`](./skills/security-privacy-auditor/SKILL.md)**: Comprehensive OWASP Top 10 auditing, comment analysis (decision records vs robotic comments), GDPR/CCPA privacy checks, anti-simulation enforcement, Git author identity verification, and pre-deployment blocking gates.
+
+### 3. Modular AI Agent Engineering Suite
+- **[`ai-agent-engineering-suite`](./skills/ai-agent-engineering-suite/SKILL.md)**: Master orchestrator and index routing tasks to specialized domain modules.
+- **[`agent-architecture-core`](./skills/agent-architecture-core/SKILL.md)**: ReAct loops, hierarchical planning, state machines, and structured tool-use frameworks.
+- **[`agent-context-rag-memory`](./skills/agent-context-rag-memory/SKILL.md)**: Context budgeting, prompt compression, hybrid search (BM25 + vector), and multi-tier memory (episodic, semantic, procedural).
+- **[`agent-mcp-development`](./skills/agent-mcp-development/SKILL.md)**: Model Context Protocol (MCP) server & client development, JSON-RPC 2.0 compliance, and tool/resource exposure.
+- **[`agent-multi-orchestration`](./skills/agent-multi-orchestration/SKILL.md)**: Multi-agent coordination, swarms, inter-agent message schemas, consensus mechanisms, and human-in-the-loop escalation.
+- **[`agent-workflow-automation`](./skills/agent-workflow-automation/SKILL.md)**: Event-driven workflows, background workers, rate limiters, DLQs, and retry mechanisms with exponential backoff.
+- **[`agent-eval-testing`](./skills/agent-eval-testing/SKILL.md)**: Trajectory benchmarks, LLM-as-a-judge frameworks, chaos testing, and token/cost performance monitoring.
+- **[`agent-security-governance`](./skills/agent-security-governance/SKILL.md)**: Direct/indirect prompt injection defense, output guardrails, PII redaction, and compliance.
+
+---
+
+## 🚀 Quick Install (Global Antigravity)
+
+### Windows (PowerShell)
+```powershell
+# Install all skills across all projects
 iwr -useb https://raw.githubusercontent.com/EldrexDelosReyesBula/human-craft/main/install.ps1 | iex
 
-# macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/EldrexDelosReyesBula/human-craft/main/install.sh | bash -s -- antigravity
-```
-Or copy [`SKILL.md`](./SKILL.md) directly to `~/.gemini/config/skills/human-craft/SKILL.md` (or `%USERPROFILE%\.gemini\config\skills\human-craft\SKILL.md` on Windows).
-
-#### Project-Specific:
-Copy `SKILL.md` to `.agents/skills/human-craft/SKILL.md` within your project repository.
-
----
-
-### 2. Claude Code
-Append or import `human-craft` in your `CLAUDE.md`:
-```markdown
-## Engineering Philosophy & Decision System
-See: .claude/skills/human-craft/SKILL.md
-```
-Or copy [`SKILL.md`](./SKILL.md) to `.claude/skills/human-craft/SKILL.md`.
-
----
-
-### 3. Cursor
-Add a reference in `.cursorrules` or `.cursor/rules/human-craft.mdc`:
-```markdown
-# Human Craft Quality Standards
-Adhere strictly to the engineering and product design standards defined in human-craft:
-- Real implementations by default (strict anti-simulation)
-- Semantic domain naming
-- Visual restraint and layered hierarchy in UI
-- 6-month maintainability rule
+# Or install from local cloned repository
+.\install.ps1 -Target all
 ```
 
+### macOS / Linux (Bash)
+```bash
+# Install all skills across all projects
+curl -fsSL https://raw.githubusercontent.com/EldrexDelosReyesBula/human-craft/main/install.sh | bash -s -- all
+
+# Or install from local cloned repository
+./install.sh all
+```
+
+Skills are installed globally into `~/.gemini/config/skills/` (or `%USERPROFILE%\.gemini\config\skills\` on Windows) and become immediately active across every Antigravity workspace.
+
 ---
 
-### 4. Windsurf / GitHub Copilot / General Agents
-Add `SKILL.md` to your workspace instructions directory (e.g., `.windsurfrules` or `.github/copilot-instructions.md`).
-
----
-
-## 🏛️ Universal Hierarchy of Authority
+## 📁 Repository Structure
 
 ```text
-1. Platform Safety & Operational Constraints
-         ↓
-2. User's Explicit Request & In-Turn Directives
-         ↓
-3. Repository-Specific Instructions (AGENTS.md, CLAUDE.md)
-         ↓
-4. Existing Codebase Conventions & Idioms
-         ↓
-5. Established Project Architecture & Design System
-         ↓
-6. human-craft Universal Skill
-         ↓
-7. Generic AI Biases & Personal Preferences
+.
+├── SKILL.md                          # human-craft universal skill
+├── install.ps1                       # Windows PowerShell installer
+├── install.sh                        # macOS / Linux installer
+├── .gitignore                        # Repository hygiene & secret filtering
+├── scripts/
+│   └── pre-push-validation.sh        # Pre-push deployment readiness checker
+└── skills/
+    ├── security-privacy-auditor/     # Security & Pre-Deployment Auditor (v3.0)
+    ├── ai-agent-engineering-suite/   # Master AI Engineering Index
+    ├── agent-architecture-core/      # Core Agent Architecture & State
+    ├── agent-context-rag-memory/     # Context Budgets, RAG & Memory
+    ├── agent-mcp-development/        # Model Context Protocol (MCP)
+    ├── agent-multi-orchestration/    # Multi-Agent Coordination & HITL
+    ├── agent-workflow-automation/    # AI Automation, Queues & DLQs
+    ├── agent-eval-testing/           # Evaluation, Benchmarks & Metrics
+    └── agent-security-governance/    # Prompt Defense & Guardrails
 ```
 
 ---
 
-## 💎 Core Tenets
+## 🛠️ Pre-Deployment Verification
 
-| Tenet | Meaning |
-| :--- | :--- |
-| **Understand Before Modifying** | Inspect and trace dependencies progressively before editing. |
-| **The 6-Month Rule** | Write code that an unfamiliar engineer can safely modify 6 months from now during an outage. |
-| **Domain-Rich Naming** | Use the language of the business domain (`calculateProratedRefund`), not generic mechanics (`handleData`). |
-| **Comments as Decision Records** | Explain non-obvious constraints, edge cases, and tradeoffs—never paraphrase obvious syntax. |
-| **Visual Restraint Doctrine** | Build beauty through typography, spacing, and contrast. Hard ban on gratuitous gradients, blurry glassmorphism, and card-in-card clutter. |
-| **Strict Anti-Simulation** | Every interactive element, API call, and database query must be functional. Never create fake success states without explicit consent. |
-| **Verifiable Reality in Docs** | Document what actually runs today, never what was intended or imagined. |
+Before committing and pushing changes to GitHub, run the pre-push validation script:
 
----
-
-## 📋 8-Step Engineering Workflow
-
-```text
-1. UNDERSTAND ──► Clarify intent, constraints, and success criteria.
-2. INSPECT    ──► Discover existing patterns, files, and dependencies.
-3. PLAN       ──► Determine the smallest coherent implementation.
-4. IMPLEMENT  ──► Write clean, domain-aligned, human-like code.
-5. INTEGRATE  ──► Connect properly to existing state, routes, and styles.
-6. VERIFY     ──► Run linters, types, tests, and manual validation.
-7. CLEAN UP   ──► Remove debug logs, unused imports, and temp files.
-8. DOCUMENT   ──► Update documentation to reflect actual changes.
-9. Verify changes on production.
+```bash
+# Run validation check
+bash scripts/pre-push-validation.sh
 ```
 
 ---
 
 ## 📄 License
 
-MIT © [Eldrex Delos Reyes Bula](LICENSE)
+This project is open-source under the [MIT License](./LICENSE).
