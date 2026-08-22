@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-08-22
+
+### Added
+- **`ai-agent-engineering-suite` (v5.0.0)**: Major enhancement integrating critical thinking, plan adherence, testing integrity, and assertiveness frameworks:
+  - **Testing Integrity Principle**: Mandates real, interactive, exploratory testing (manual UI inspections, real API requests, database queries, file verification) and prohibits relying solely on test scripts.
+  - **Plan Adherence & Critical Thinking**: Conflict detection triggers and `CriticalPlanAnalyzer` framework to evaluate and question contradictory plans.
+  - **Constructive Disagreement Protocol**: 5-step communication model (Identify Conflict, Explain Implications, Provide Evidence, Offer Alternatives, Clarifying Questions).
+  - **Enhanced Testing Approach**: `ManualVerification` protocol and comprehensive test reliability truth table.
+  - **AI Assertiveness Framework**: Explicit push-back triggers with concrete real-world dialogue examples (security, architecture, technical debt).
+  - **Enhanced Human-Craft Integration**: Architecture Decision Record (ADR) standards for code comments, CHANGELOGs, and PR discussions.
+  - **Token Optimization Matrix**: Push-back priority levels (`critical`, `high`, `medium`, `low`) and token-aware quick conflict analysis.
+  - **Master Verification Protocol**: Comprehensive pre-completion sign-off checklist across code verification, plan adherence, human-craft compliance, and documentation.
+
+### Changed
+- Synced updated `ai-agent-engineering-suite` skill definition across local workspace and global Antigravity configuration (`~/.gemini/config/skills/`).
+
+---
+
 ## [2.0.0] - 2026-08-20
 
 ### Added

@@ -25,7 +25,7 @@ A portable, modular **engineering philosophy, security auditor, and AI agent eng
                                   │
                                   ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│ 3. ai-agent-engineering-suite (v4.0 Modular)                     │
+│ 3. ai-agent-engineering-suite (v5.0 Modular)                     │
 │    Architecture, RAG, Memory, MCP, Multi-Agent & Evaluation     │
 └──────────────────────────────────────────────────────────────────┘
 ```
@@ -41,7 +41,7 @@ A portable, modular **engineering philosophy, security auditor, and AI agent eng
 - **[`security-privacy-auditor`](./skills/security-privacy-auditor/SKILL.md)**: Comprehensive OWASP Top 10 auditing, comment analysis (decision records vs robotic comments), GDPR/CCPA privacy checks, anti-simulation enforcement, Git author identity verification, and pre-deployment blocking gates.
 
 ### 3. Modular AI Agent Engineering Suite
-- **[`ai-agent-engineering-suite`](./skills/ai-agent-engineering-suite/SKILL.md)**: Master orchestrator and index routing tasks to specialized domain modules.
+- **[`ai-agent-engineering-suite`](./skills/ai-agent-engineering-suite/SKILL.md)**: Master orchestrator and index routing tasks to specialized domain modules, enhanced with critical thinking, testing integrity, and plan adherence.
 - **[`agent-architecture-core`](./skills/agent-architecture-core/SKILL.md)**: ReAct loops, hierarchical planning, state machines, and structured tool-use frameworks.
 - **[`agent-context-rag-memory`](./skills/agent-context-rag-memory/SKILL.md)**: Context budgeting, prompt compression, hybrid search (BM25 + vector), and multi-tier memory (episodic, semantic, procedural).
 - **[`agent-mcp-development`](./skills/agent-mcp-development/SKILL.md)**: Model Context Protocol (MCP) server & client development, JSON-RPC 2.0 compliance, and tool/resource exposure.
